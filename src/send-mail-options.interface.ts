@@ -5,7 +5,7 @@ import { DKIMOptions } from "./dkim-options.type";
 import { AttachmentLike } from "./attachment-like.interface";
 import { Attachment } from "./attachment.interface";
 
-export default interface SendMailOptions {
+export interface SendMailOptions {
     /** The e-mail address of the sender. All e-mail addresses can be plain 'sender@server.com' or formatted 'Sender Name <sender@server.com>' */
     from?: string | Address | undefined;
     /** An e-mail address that will appear on the Sender: field */
