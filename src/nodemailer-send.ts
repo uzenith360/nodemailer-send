@@ -33,6 +33,10 @@ export default class NodemailerSend {
         return this.transporter.sendMail(mailOptions);
     }
 
+    public close(): void {
+        this.transporter.close();
+    }
+
     public static getInstance(
         host: string,
         port: number,
